@@ -4,24 +4,24 @@ package tallermrrobot_ciclo3;
 
 public class Empresa {
     
-    private String nombre;
+    private String nombreEmpresa;
     private String direccion;
-    private int telefono;
-    private int nit;
+    private String telefono;
+    private String nit;
 
-    public Empresa(String nombre, String direccion, int telefono, int nit) {
-        this.nombre = nombre;
+    public Empresa(String nombreEmpresa, String direccion, String telefono, String nit) {
+        this.nombreEmpresa = nombreEmpresa;
         this.direccion = direccion;
         this.telefono = telefono;
         this.nit = nit;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombreEmpresa() {
+        return nombreEmpresa;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombreEmpresa(String nombreEmpresa) {
+        this.nombreEmpresa = nombreEmpresa;
     }
 
     public String getDireccion() {
@@ -32,19 +32,19 @@ public class Empresa {
         this.direccion = direccion;
     }
 
-    public int getTelefono() {
+    public String getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(int telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 
-    public int getNit() {
+    public String getNit() {
         return nit;
     }
 
-    public void setNit(int nit) {
+    public void setNit(String nit) {
         this.nit = nit;
     }
     
