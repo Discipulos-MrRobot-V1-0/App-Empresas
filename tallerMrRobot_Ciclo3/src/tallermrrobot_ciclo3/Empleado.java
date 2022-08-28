@@ -1,7 +1,5 @@
 package tallermrrobot_ciclo3;
 
-
-
 public class Empleado {
     
     private String nombre;
@@ -14,7 +12,6 @@ public class Empleado {
         this.correo = correo;
         this.empresa = empresa;
         this.rol = rol;
-        
     }
 
     public String getNombre() {
@@ -48,7 +45,5 @@ public class Empleado {
     public void setRol(String rol) {
         this.rol = rol;
     }
-
-    
-    
+   
 }

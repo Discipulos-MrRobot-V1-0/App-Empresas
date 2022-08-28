@@ -1,6 +1,4 @@
-
 package tallermrrobot_ciclo3;
-
 
 public class MovimientoDinero {
     
@@ -11,7 +9,7 @@ public class MovimientoDinero {
         this.monto = monto;
         this.concepto = concepto;
     }
-
+    
     public int getMonto() {
         return monto;
     }
@@ -27,6 +25,4 @@ public class MovimientoDinero {
     public void setConcepto(String concepto) {
         this.concepto = concepto;
     }
-    
-    
 }

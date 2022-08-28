@@ -5,10 +5,8 @@ import tallermrrobot_ciclo3.Empresa;
 import tallermrrobot_ciclo3.MovimientoDinero;
 import java.util.Scanner;
 
-
 public class TallerMrRobot_Ciclo3 {
 
-   
     public static void main(String[] args) {
         
         Empresa empresa1 = new Empresa("Exito", "Avenida 86", "1233456", "123456789");
@@ -38,8 +36,6 @@ public class TallerMrRobot_Ciclo3 {
         movimiento1.setMonto(-1200000);
         System.out.println(movimiento1.getMonto());
         movimiento1.setConcepto("Compra de frutas");
-        System.out.println(movimiento1.getConcepto());
-        
+        System.out.println(movimiento1.getConcepto());   
     }
-
 }
