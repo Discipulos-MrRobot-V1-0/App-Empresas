@@ -16,7 +16,7 @@ public class Perfil {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private int idPerfil;
 
     @Column(length = 50,nullable = false)
     private String imagen;

@@ -8,8 +8,6 @@ import javax.persistence.Id;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Column;
-import javax.persistence.ManyToOne;
-import javax.persistence.JoinColumn;
 
 @Data
 @Entity
@@ -19,14 +17,6 @@ public class Empresa {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idEmpresa;
-
-    @ManyToOne
-    @JoinColumn(name = "id_empleado", nullable = false)
-    private Empleado empleado;
-
-    @ManyToOne
-    @JoinColumn(name = "id_movimiento", nullable = false)
-    private MovimientoDinero movimiento;
 
     @Column(length = 50,nullable = false)
     private String nombreEmpresa;

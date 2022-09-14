@@ -1,6 +1,5 @@
 package com.discipulosMrRobot.demo.Service;
 
-
 import com.discipulosMrRobot.demo.model2.Empresa;
 
 import java.util.List;

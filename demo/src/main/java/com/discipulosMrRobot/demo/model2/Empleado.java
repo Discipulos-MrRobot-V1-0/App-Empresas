@@ -8,10 +8,11 @@ import javax.persistence.Id;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Column;
-import javax.persistence.OneToOne;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+import javax.persistence.Enumerated;
+import javax.persistence.EnumType;
 
 @Data
 @Entity
@@ -26,15 +27,10 @@ public class Empleado {
     @JoinColumn(name = "id_perfil", nullable = false)
     private Perfil perfil;
 
-    @ManyToOne
-    @JoinColumn(name = "id_rol", nullable = false)
+    @Enumerated(EnumType.STRING)
     private Rol rol;
 
     @ManyToOne
-    @JoinColumn(name = "id_movimiento", nullable = false)
-    private MovimientoDinero movimiento;
-
-    @OneToMany
     @JoinColumn(name = "id_empresa", nullable = false)
     private Empresa empresa;
 
